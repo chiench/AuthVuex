@@ -40,6 +40,7 @@ header ul li a:hover {
   background-color: rgb(34, 190, 81);
 }
 main {
+  background-color: #343434;
   min-height: calc(100vh - 94px);
   border: 2px solid black;
 }

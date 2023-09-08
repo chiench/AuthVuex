@@ -67,6 +67,9 @@
   margin: 5% 15%;
   padding: 4% 15%;
 }
+.header {
+  color: #ffffff;
+}
 a,
 a:link {
   color: #a66;
