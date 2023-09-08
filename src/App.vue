@@ -1,4 +1,29 @@
-<script setup></script>
+<script>
+import { ref, computed } from "vue";
+import { useStore } from "vuex";
+export default {
+  setup() {
+    const count = ref(2);
+    const store = useStore();
+    // const countStore = computed(() => {
+    //   return store.state.count;
+    // });
+    // Tạo computed property bằng cách sử dụng `computed`
+    // const nameStore = computed(() => {
+    //   return store.state.name;
+    // });
+    // Phương thức
+    const incrementCount = () => {
+      console.log("vao hàm component commit");
+    };
+    const incrementCountAction = () => {};
+
+    return {
+      store,
+    };
+  },
+};
+</script>
 
 <template>
   <header>
@@ -16,7 +41,7 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container text-light">
       <RouterView></RouterView>
     </div>
   </main>
